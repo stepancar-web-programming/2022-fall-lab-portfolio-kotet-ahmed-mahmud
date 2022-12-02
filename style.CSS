@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
-
 :root{
     --yellow:#f9ca24;
 }
@@ -103,7 +102,7 @@ header .user img{
     width:17rem;
     border-radius: 50%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     margin-bottom: 1rem;
     border:.7rem solid var(--yellow);
 }
@@ -303,7 +302,7 @@ header .navbar ul li a:hover{
     height:100%;
     width:100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .portfolio .box-container .box:hover img{
@@ -339,19 +338,15 @@ header .navbar ul li a:hover{
     font-size: 1.7rem;
     width:100%;
 }
-
 .contact .row form .box::-webkit-input-placeholder{
     text-transform: capitalize;
 }
-
 .contact .row form .box::-moz-placeholder{
     text-transform: capitalize;
 }
-
 .contact .row form .box:-ms-input-placeholder{
     text-transform: capitalize;
 }
-
 .contact .row form .box::-ms-input-placeholder{
     text-transform: capitalize;
 }
@@ -371,7 +366,6 @@ header .navbar ul li a:hover{
     font-size: 3rem;
     padding-bottom: 2rem;
 }
-
 .contact .row .content .info h3{
     display: flex;
     align-items: center;
@@ -380,32 +374,10 @@ header .navbar ul li a:hover{
     padding:1rem 0;
     font-weight: normal;
 }
-
 .contact .row .content .info h3 i{
     padding-right: 1rem;
     color:var(--yellow);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
-
 @media (max-width:1200px){
 
     html{

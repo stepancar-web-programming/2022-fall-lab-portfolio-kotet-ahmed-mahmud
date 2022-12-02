@@ -1,38 +1,33 @@
-$(document).ready(function(){
-
-  $('#menu').click(function(){
+$(document).ready(() => {
+  // eslint-disable-next-line func-names
+  $('#menu').click(function () {
     $(this).toggleClass('fa-times');
     $('header').toggleClass('toggle');
   });
 
-  $(window).on('scroll load',function(){
-
+  $(window).on('scroll load', () => {
     $('#menu').removeClass('fa-times');
     $('header').removeClass('toggle');
 
-    if($(window).scrollTop() > 0){
+    if ($(window).scrollTop() > 0) {
       $('.top').show();
-    }else{
+    } else {
       $('.top').hide();
     }
-
   });
 
-  // smooth scrolling 
-
-  $('a[href*="#"]').on('click',function(e){
-
+  // eslint-disable-next-line func-names
+  $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
 
-    $('html, body').animate({
+    $('html, body').animate(
+      {
 
-      scrollTop : $($(this).attr('href')).offset().top,
+        scrollTop: $($(this).attr('href')).offset().top,
 
-    },
-      500, 
-      'linear'
+      },
+      500,
+      'linear',
     );
-
   });
-
 });
